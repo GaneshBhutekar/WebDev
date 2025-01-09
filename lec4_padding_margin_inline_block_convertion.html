@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            display:block;  
+        }
+        h2{
+            display:inline;
+        }
+    </style>
+</head>
+<body>
+    <div style = "padding :7px; border: 7px solid black;">
+        This is the case of margin
+    </div>
+    <div style= "margin : 20px; border: 7px solid blue; ">
+        Here Border is Enabled
+    </div>
+    <!-- Above one is div which is block-element by default -->
+     <!-- It is taking whole line block from left screen to right screen -->
+      <!-- here span element is inline but because of CSS rule it is now block and behave like a block element
+       check there paddding and margin for clear
+        -->
+     <span style="padding : 8px; border: 10px solid yellowgreen;">
+        This is span let's see on padding 
+
+     </span>
+     <span style="margin:10px; border:3px solid violet;">
+        this is for margin outside space is there 
+     </span>
+     <!-- here mark is inline and you can see the hughlight part -->
+      <!-- it consider only the word part not full body -->
+      <mark style="margin :20px;border: 5px solid black;">
+        THis is inline element
+    </mark>
+    <br>
+    <!-- normally h2 is block but it now changed into in the inline element beacuse of CSS rule -->
+    <h2 style ="margin : 10px; border :5px solid firebrick;">HEY</h2>
+    
+    
+
+
+</body>
+</html>
