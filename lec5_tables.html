@@ -1,0 +1,216 @@
+<!-- In below code there is problem that inside thead there should be tr which accesing multiple th in head -->
+
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>tables</title>
+       <style>
+        table {
+            border: 2px solid rgb(0,0,0);
+            font:
+            16px Tahoma,
+            Arial,
+            Helvetica;
+        }
+        th,td {
+            border: 2px solid rgb(150,18,240);
+        }  
+        table>thead>th {
+            background-color: rgb(34, 120, 234);
+        }      
+       </style>
+   </head>
+   <body>
+       <table>
+           <thead>
+               <th>s.no</th>
+               <th>name</th>
+               <th>class</th>
+               <th>score</th>
+               <th>Status</th>
+           </thead>
+           <body>
+               <tr>
+                   <td>1.</td>
+                   <td>Ganesh</td>
+                   <td>4</td>
+                   <td>99</td>
+                   <td rowspan="4">Students</td>
+               </tr>
+               <tr>
+                   <td >2.</td>
+                   <td>sushil</td>
+                   <td>3</td>
+                   <td>78</td>
+               </tr>
+               <tr>
+                   <td>3.</td>
+                   <td>mayanti</td>
+                   <td>4</td>
+                   <td>88</td>
+               </tr>
+           </body>
+           <tfoot>
+               <tr>
+                   <td colspan="3">total</td>
+                   <td>88.33</td>
+               </tr>
+           </tfoot>
+       </table>
+
+       <!-- ANother Table -->
+        <br>
+        <br>
+
+       <table>
+           <thead>
+               <th>Country</th>
+               <th>state</th>
+               <th>city</th>
+               <th>street</th>
+               <th>male</th>
+               <th>female</th>
+               <th>others</th>
+           </thead>
+           <tbody>
+               <tr>
+                   <td rowspan="8">India</td>
+                   <td rowspan="4">Kerala</td>
+                   <td rowspan="2">Cochin</td>
+                   <td>new street</td>
+                   <td>500</td>
+                   <td>600</td>
+                   <td>6</td>
+               </tr>
+               <tr>
+                   <!-- <td></td> -->
+                   <!-- <td></td> -->
+                   <!-- <td></td> -->
+                   <td>main street</td>
+                   <td>300</td>
+                   <td>288</td>
+                   <td>2</td>
+               </tr>
+               <tr>
+                   <!-- <td></td> -->
+                   <!-- <td></td> -->
+                   <td rowspan="2">Trivandram</td>
+                   <td>guru street</td>
+                   <td>500</td>
+                   <td>600</td>
+                   <td>10</td>
+               </tr>
+               <tr>
+                   <td>TVK street </td>
+                   <td>600</td>
+                   <td>400</td>
+                   <td>5</td>
+               </tr>
+               <tr>
+                   <!-- <td></td> -->
+                   <td rowspan="4">Maharashtra</td>
+                   <td rowspan="2">Mumbai</td>
+                   <td>Krisha street</td>
+                   <td>700</td>
+                   <td>850</td>
+                   <td>1</td>
+               </tr>
+               <tr>
+                   <!-- <td></td> -->
+                   <!-- <td></td> -->
+                   <!-- <td></td> -->
+                   <td>Main street</td>
+                   <td>500</td>
+                   <td>600</td>
+                   <td>4</td>
+               </tr>
+               <tr>
+                   <!-- <td></td> -->
+                   <!-- <td></td> -->
+                   <td rowspan="2">Surath</td>
+                   <td>New street</td>
+                   <td>500</td>
+                   <td>600</td>
+                   <td>0</td>
+               </tr>
+               <tr>
+                   <!-- <td></td> -->
+                   <!-- <td></td> -->
+                   <!-- <td></td> -->
+                   <td>Bulla street</td>
+                   <td>500</td>
+                   <td>600</td>
+                   <td>2</td>
+               </tr>
+               <tr>
+                   <td rowspan=2">USA</td>
+                   <td rowspan="2">Alaska</td>
+                   <td rowspan="2">AKA Central</td>
+                   <td>New street</td>
+                   <td>200</td>
+                   <td>210</td>
+                   <td>2</td>
+               </tr>
+               <tr>
+                   <!-- <td></td> -->
+                   <!-- <td></td> -->
+                   <!-- <td></td> -->
+                   <td>Cross street</td>
+                   <td>1000</td>
+                   <td>1050</td>
+                   <td>10</td>
+               </tr>  
+           </tbody>
+       </table>
+
+       <table>
+           <thead>
+               <tr>
+                   <th rowspan="3">Day</th>
+                   <th colspan="3">Seminar</th>
+               </tr>
+               <tr>
+                   <th colspan="2">schedule</th>
+                   <th rowspan="2">Topic</th>
+               </tr>
+               <tr>
+                   <th>Begin</th>
+                   <th>End</th>
+               </tr>
+
+           </thead>
+
+           <tbody>
+               <tr>
+                   <td rowspan="2">Monday</td>
+                   <td rowspan="2">8:00am</td>
+                   <td rowspan="2">5:00pm</td>
+                   <td>Intro To XML</td>
+               </tr>
+               <tr>
+                   <td>validity:DTDand Relax</td>
+               </tr>
+               <tr>
+                   <td rowspan="3">Tuesday</td>
+                   <td>8:00am</td>
+                   <td>11:00am</td>
+                   <td rowspan="3">XPath<hr><hr>XSL Tranformation</td>
+               </tr>
+               <tr>
+                   <td>11:00am</td>
+                   <td>5:00pm</td>
+               </tr>
+               <tr>
+                   <td>2:00pm</td>
+                   <td>5:00pm</td>
+               </tr>
+               <tr>
+                   <td>Wednesday</td>
+                   <td>8:00am</td>
+                   <td>12:00pm</td>
+                   <td>XSL Formatting object</td>
+               </tr>
+           </tbody>
+       </table>
+   </body>
+</html>
