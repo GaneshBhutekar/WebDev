@@ -23,7 +23,7 @@
             p.class3{
                 margin-left: 30px;
             }
-            ul.class4{
+           ul.class4{
                 display:flex;
                 margin: 0px;
                 padding: 0px;
@@ -52,6 +52,30 @@
                 font-weight: bold;
                 text-align: center;
             }
+            fieldset{
+                border: 3px solid darkred;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            fieldset>legend{
+                font-size: 30px;
+                text-decoration: underline;
+                color: darkslategray    ;
+            }
+            #id90{
+                font-size: 25px;
+            }
+            #id91{
+                font-size: 25px;
+            }
+            #id92 , #id93{  
+                font-size: 25px;
+            }
+            #section_id1{
+                background-color: silver;
+                border: 1px solid;
+            }
+
         </style>
     </head>
     <body>
@@ -321,6 +345,45 @@ Today, Sri Lanka is striving for economic recovery and social harmony while pres
                 </tfoot>
             </table>
          </main>
+         <br>
+         <section id="section_id1">
+            <h3>You do not have Account </h3>
+            <form >
+                <label for="id90" id="id92">Email:</label>
+                <br>
+                <input type="email" name="email" id="id90" placeholder="abc@gmail.com">
+                <br>
+                <label for="id91" id="id93">Password:</label>
+                <br>
+                <input type="password" name="password" id="id91" placeholder="****">
+                
+                <fieldset>
+                    <legend>Select Countries which you more likely to have information:</legend>
+                    <label for="id3">Which Country you are intrested</label>
+                    <br>
+                    <label for="id3">India</label>
+                    <input type="checkbox" id="id3" name="india">
+                    <br>
+                    <label for="id4">pakistan</label>
+                    <input type="checkbox" id="id4" name="pakistan">
+                    <br>
+                    <label for="id4">sri lanka</label>
+                    <input type="checkbox" id="id5" name="sri lanka">
+                    <br>
+                    <label for="id6">maldives</label>
+                    <input type="checkbox" id="id6" name="maldives">
+                    <br>
+                    <label for="id7">afganistan</label>
+                    <input type="checkbox" id="id7" name="Afganistan">
+                    <br>
+                    <label for="id8">bhutan</label>
+                    <input type="checkbox" id="id8" name="Bhutan">
+                    
+                    <br>
+                    <button style="background-color: whitesmoke;">Submit</button>
+                </fieldset>
+            </form>
+         </section>
          <footer>
             <h2>The End</h2>
             <ul class="class1">
